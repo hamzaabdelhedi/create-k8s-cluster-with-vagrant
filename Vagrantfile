@@ -122,6 +122,9 @@ EOF
         
         # Install Flannel network plugin
         kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+
+        # Install Nginx
+        kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.12.3/deploy/static/provider/cloud/deploy.yaml
         
         # Generate join command and save it
         kubeadm token create --print-join-command > /vagrant/kubeadm-join.sh
