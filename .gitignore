@@ -1,0 +1,22 @@
+# Vagrant-related files and folders
+.vagrant/
+*.box
+
+# Log files
+*.log
+
+# SSH keys (if any generated for provisioning)
+*.pem
+*.key
+
+# Provisioning temp files
+*.retry
+*.pid
+*.sock
+
+# Common system/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
